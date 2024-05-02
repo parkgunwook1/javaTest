@@ -1,0 +1,47 @@
+package collection;
+
+import java.util.ArrayList;
+
+public class StudyCollection {
+
+	/* 컬렉션 프레임워크 
+	 * 
+	 * 컬렉션 프레임워크란 다수의 데이터를 쉽고 효과적으로 처리할 수 있는 표준화된 방법을 제공하는 클래스의 집합을 의미한다.
+	 * 즉, 데이터를 저장하는 자료 구조와 데이터를 처리하는 알고리즘을 구조화하여 클래스로 구현해 놓은 것이다.
+	 * */
+	
+	/* 컬렉션 프레임워크 주요 인터페이스 
+	 * 
+	 * 주요 인터페이스는 다음과 같다.
+	 *  * List
+	 *  * Set
+	 *  * Map
+	 *  
+	 *  List와 Set 인터페이스는 모두 Collection 인터페이스를 상속받지만, 구조상의 차이로 인해 Map 인터페이스는 별도로 정의된다.
+	 *
+	   
+	 * 주요 프레임워크 특징
+	 * 
+	 *   * List => 순서가 있는 데이터의 집합으로, 데이터의 중복을 허용함
+	 *   			- vector, ArrayList, LinkedList, Stack, Queue
+	 *   * Set => 순서가 없는 데이터의 집합으로, 데이터의 중복을 허용하지 않음
+	 *   			- HashSet, TreeSet
+	 *   * Map => 키와 값의 한쌍으로 이루어지는 데이터의 집합, 순서가 없다. 키는 중복을 허용하지 않지만, 값은 중복 허용
+	 *   			- HashMap, TreeMap, Hashtable, Properties
+	 * */
+	public static void main(String[] args) {
+		
+		ArrayList<String> arrList = new ArrayList<>();
+		
+		arrList.add("넷");
+		arrList.add("셋");
+		arrList.add("셋");
+		arrList.add("하나");
+		
+		for(int i = 0; i < arrList.size(); i++) {
+			System.out.println(arrList.get(i));
+		}
+				
+		
+	}
+}
